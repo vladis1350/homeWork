@@ -5,6 +5,16 @@ import java.util.Random;
 public class RandomGeneratorDemo {
     public int a;
     public int b;
+    public int c;
+
+    public int getC() {
+        return c;
+    }
+
+    public void setC(int c) {
+        this.c = c;
+    }
+
     public int result;
 
     public int getResult() {
@@ -37,9 +47,11 @@ public class RandomGeneratorDemo {
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
         randomGeneratorDemo.setA(random.nextInt(50));
         randomGeneratorDemo.setB(random.nextInt(50));
+        randomGeneratorDemo.setC(random.nextInt(50));
         System.out.println("Случайное число а = " + randomGeneratorDemo.getA());
         System.out.println("Случайное число b = " + randomGeneratorDemo.getB());
-        randomGeneratorDemo.setResult(randomGeneratorDemo.getA() + randomGeneratorDemo.getB());
+        System.out.println("Случайное число b = " + randomGeneratorDemo.getC());
+        randomGeneratorDemo.setResult(randomGeneratorDemo.getA() + randomGeneratorDemo.getB() + randomGeneratorDemo.getC());
         System.out.println("Результат сложения а и b = " + randomGeneratorDemo.getResult());
     }
 }
