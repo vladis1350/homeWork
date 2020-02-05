@@ -35,7 +35,7 @@ public class RandomGeneratorDemo {
     public static void main(String[] args) {
         Random random = new Random();
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
-        randomGeneratorDemo.setA(random.nextInt(100));
+        randomGeneratorDemo.setA(random.nextInt(50));
         randomGeneratorDemo.setB(random.nextInt(50));
         System.out.println("Случайное число а = " + randomGeneratorDemo.getA());
         System.out.println("Случайное число b = " + randomGeneratorDemo.getB());
